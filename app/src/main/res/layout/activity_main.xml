@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save to Realm Database!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/textview1"
+         />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cname"
+        android:hint="Enter Course Name"
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cname"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cdescp"
+        android:hint="Enter Course Description"
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cdescp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ctrack"
+        android:hint="Enter Course Track"
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ctrack"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cduration"
+        android:hint="Enter Course Duration"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savetorm"
+        android:text="Save to Realm"
+        android:layout_below="@+id/cduration"
+        android:backgroundTint="#FF5E2B"
+        android:textColor="#0C0A0A"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getdatarm"
+        android:text="Get Data From Realm"
+        android:layout_below="@+id/savetorm"
+        android:backgroundTint="#FF5722"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
